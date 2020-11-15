@@ -1,0 +1,21 @@
+.circle {
+  opacity: 0;
+}
+
+.circlePulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.circles {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  height: 5vh;
+  width: 100%;
+}
