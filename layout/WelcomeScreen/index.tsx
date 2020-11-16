@@ -1,5 +1,5 @@
 import Logo from 'component/icons/Logo'
-import LoadingCircles from 'component/LoadingCircles'
+import Circles from 'component/loading/Circles'
 import style from 'layout/WelcomeScreen/style.module.css'
 
 export default function WelcomeScreen(){
@@ -7,7 +7,7 @@ export default function WelcomeScreen(){
     <div className={style.container}>
       <div className={style.Logo}>
         <Logo fill="white"/>
-        <LoadingCircles fill="white" nCircle={10}/>
+        <Circles fill="white" nCircle={10}/>
       </div>
     </div>
   )

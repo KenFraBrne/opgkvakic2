@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import style from 'component/LoadingCircles/style.module.css'
+import style from 'component/loading/Circles/style.module.css'
 
 interface CircleProps {
   key: any;
