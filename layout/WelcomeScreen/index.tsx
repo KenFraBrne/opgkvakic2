@@ -6,7 +6,7 @@ export default function WelcomeScreen(){
   return (
     <div className={style.container}>
       <div className={style.Logo}>
-        <Logo fill="white"/>
+        <Logo color="white"/>
         <Circles fill="white" nCircle={10}/>
       </div>
     </div>
