@@ -18,3 +18,8 @@ a {
 :root {
   --mainColor: mediumseagreen;
 }
+
+@font-face {
+  font-family: NavbarFont;
+  src: local('NavbarFont'), url(fonts/Rubik/Rubik-Regular.ttf) format('truetype');
+}
