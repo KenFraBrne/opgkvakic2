@@ -1,0 +1,28 @@
+/* https://css-tricks.com/hamburger-Hamburger-with-a-side-of-react-hooks-and-styled-components/ */
+
+.Hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.Hamburger:focus {
+  outline: none;
+}
+
+.Hamburger div {
+  width: 1.5rem;
+  height: 0.20rem;
+  background: var(--mainColor);
+  border-radius: 10px;
+  position: relative;
+  transform-origin: 1px;
+}
