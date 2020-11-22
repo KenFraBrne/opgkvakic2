@@ -16,9 +16,9 @@ export default function Hamburger(props: Props){
   }
 
   const finalStyle = [ 
-    { transform: 'rotate(+150deg) scale(+0.7, 1) translate(-1.00rem, -0.45rem)' },
+    { transform: 'rotate(+140deg) scale(+0.7, 1) translate(-1.00rem, -0.45rem)' },
     { transform: 'rotate(+000deg) scale(-1.1, 1) translate(-1.50rem, -0.00rem)' },
-    { transform: 'rotate(-150deg) scale(+0.7, 1) translate(-1.00rem, +0.45rem)' },
+    { transform: 'rotate(-140deg) scale(+0.7, 1) translate(-1.00rem, +0.45rem)' },
   ]
 
   const transitionStyles = {
