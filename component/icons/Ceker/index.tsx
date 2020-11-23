@@ -1,10 +1,11 @@
 interface Props {
   color: string;
+  className?: string;
 }
 
 export default function Ceker(props: Props){
   return (
-    <svg viewBox="0 0 172 163" xmlns="http://www.w3.org/2000/svg">
+    <svg className={ props?.className } viewBox="0 0 172 163" xmlns="http://www.w3.org/2000/svg">
       <g transform="translate(-43 -128)">
         <circle transform="rotate(44)" cx="243" cy="126" r="20" fill="none" stroke={ props.color } strokeLinecap="round" strokeWidth="12"/>
       </g>
