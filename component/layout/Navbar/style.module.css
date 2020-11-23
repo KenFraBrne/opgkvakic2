@@ -1,0 +1,104 @@
+/* container */
+/* --------- */
+.container {
+  font-family: NavbarFont;
+  color: var(--mainColor);
+  width: 100vw;
+  height: 10vh;
+  padding: 2vh 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.4em;
+}
+
+/* SideMenu */
+/* -------- */
+.Hamburger {
+  display: none;
+  margin: 0 1em;
+}
+
+.SideMenu {
+  display: none;
+}
+
+/* Logo */
+/* ---- */
+.Logo {
+  width: auto;
+  height: 3em;
+  margin: 0 1em;
+}
+
+.Logo svg {
+  height: 100%;
+}
+
+/* Icons */
+/* ----- */
+.Icons {
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Icons a {
+  width: 2em;
+  height: 2em;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  border-radius: 100%;
+  transition: background 500ms ease-out;
+  background: transparent;
+  padding: 17%;
+}
+
+.Icons a:hover {
+  background: rgba(0, 0, 0, 0.12);
+}
+
+/* navigation links */
+/* ---------------- */
+.Navlinks {
+  padding: 0;
+  width: 40vw;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.Navlinks li {
+  display: inline;
+}
+
+.Navlinks a {
+  text-decoration: none;
+  opacity: 85%;
+  /* - underline : https://nickymeuleman.netlify.app/blog/css-animated-wrapping-underline */
+  background-image: linear-gradient(white, white), linear-gradient(var(--mainColor), var(--mainColor));
+  background-size: 100% 2px, 0 2px;
+  background-position: 100% 100%, 0% 100%;
+  background-repeat: no-repeat;
+  transition: all 300ms ease;
+}
+
+.container a:hover {
+  opacity: 100%;
+  background-size: 0 2px, 100% 2px;
+}
+
+/* responsive */
+/* ---------- */
+@media screen and (max-width: 800px) {
+  .container ul,
+  .Icons .UserIcon { display: none; }
+
+  .Hamburger,
+  .SideMenu { display: initial; }
+
+  .Logo { height: 90%; }
+
+  .Icons { width: 13%; justify-content: center;}
+}
