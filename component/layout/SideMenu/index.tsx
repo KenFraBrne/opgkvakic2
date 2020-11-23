@@ -45,12 +45,7 @@ export default function SideMenu(props: Props) {
   }
 
   return (
-    <Transition
-      in={ props.open }
-      timeout={ props.duration }
-      appear={ true }
-      mountOnEnter={ true }
-      unmountOnExit={ false }>
+    <Transition in={ props.open } timeout={ props.duration }>
       { ( state: TransitionState ) => (
         <div
           className={ style.container }
