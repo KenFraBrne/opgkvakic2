@@ -1,9 +1,9 @@
 import MainLayout from 'layout/MainLayout'
 
-export default function HomePage() {
+export default function UserPage() {
   return (
     <MainLayout>
-      <h1> Home page </h1>
+      <h1> User page </h1>
     </MainLayout>
   )
 }

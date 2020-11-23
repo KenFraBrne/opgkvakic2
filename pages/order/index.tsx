@@ -1,9 +1,9 @@
 import MainLayout from 'layout/MainLayout'
 
-export default function HomePage() {
+export default function OrderPage() {
   return (
     <MainLayout>
-      <h1> Home page </h1>
+      <h1> Order page </h1>
     </MainLayout>
   )
 }

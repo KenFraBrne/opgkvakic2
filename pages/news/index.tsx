@@ -1,9 +1,9 @@
 import MainLayout from 'layout/MainLayout'
 
-export default function HomePage() {
+export default function NewsPage() {
   return (
     <MainLayout>
-      <h1> Home page </h1>
+      <h1> News page </h1>
     </MainLayout>
   )
 }
