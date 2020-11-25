@@ -20,6 +20,11 @@ a {
 }
 
 @font-face {
-  font-family: NavbarFont;
-  src: local('NavbarFont'), url(fonts/Rubik/Rubik-Regular.ttf) format('truetype');
+  font-family: HeadFont;
+  src: local('HeadFont'), url(fonts/Rubik-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: BodyFont;
+  src: local('BodyFont'), url(fonts/Karla-Regular.ttf) format('truetype');
 }
