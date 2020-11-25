@@ -1,14 +1,11 @@
 /* container */
 /* --------- */
 .container {
-  font-family: NavbarFont;
-  color: rgb(var(--mainColor));
   width: 100vw;
   height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-size: 1.4em;
 }
 
 /* SideMenu */

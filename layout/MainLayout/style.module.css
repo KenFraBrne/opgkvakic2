@@ -1,0 +1,26 @@
+.container {
+  color: rgba(var(--mainColor), 1);
+}
+
+.Navbar {
+  font-size: 1.4em;
+  font-family: HeadFont;
+}
+
+.Body {
+  font-size: 1.5em;
+  font-family: BodyFont;
+}
+
+.Footer {
+
+}
+
+@media screen and (max-width: 1100px) {
+  .Navbar{ font-size: 1.2em }
+  .Body{ font-size: 1.3em }
+}
+
+@media screen and (max-width: 900px) {
+  .Body{ font-size: 1em }
+}

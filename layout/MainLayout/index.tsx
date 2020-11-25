@@ -7,6 +7,7 @@ import * as LoadingTypes from 'context/Loading/types'
 import Navbar from 'component/layout/Navbar'
 import WelcomeScreen from 'layout/WelcomeScreen'
 import Fade from 'component/transition/Fade'
+import style from 'layout/MainLayout/style.module.css'
 
 interface Props {
   children: JSX.Element;
@@ -32,10 +33,10 @@ export default function MainLayout(props: Props){
         <WelcomeScreen />
       </Fade>
 
-      <div>
-        <Navbar />
-        <div> { props.children } </div>
-        <div> Footer </div>
+      <div className={style.container}>
+        <div className={style.Navbar}> <Navbar /> </div>
+        <div className={style.Body}> { props.children } </div>
+        <div className={style.Footer}> Footer </div>
       </div>
     </div>
   )
