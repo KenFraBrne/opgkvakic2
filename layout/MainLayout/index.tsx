@@ -10,7 +10,7 @@ import Fade from 'component/transition/Fade'
 import style from 'layout/MainLayout/style.module.css'
 
 interface Props {
-  children: JSX.Element;
+  children: JSX.Element | JSX.Element[];
 }
 
 export default function MainLayout(props: Props){
