@@ -5,7 +5,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  background-color: var(--mainColor);
+  background-color: rgb( var(--mainColor) );
 }
 
 .Logo {

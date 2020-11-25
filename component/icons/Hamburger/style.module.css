@@ -21,7 +21,7 @@
 .Hamburger div {
   width: 1.5rem;
   height: 0.20rem;
-  background: var(--mainColor);
+  background: rgb( var(--mainColor) );
   border-radius: 10px;
   position: relative;
   transform-origin: 1px;

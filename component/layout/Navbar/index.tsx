@@ -36,7 +36,7 @@ export default function Navbar(){
 
         <Link href='/' passHref>
           <a className={style.Logo}>
-            <Logo color="var(--mainColor)"/>
+            <Logo color="rgb( var(--mainColor) )"/>
           </a>
         </Link>
 
@@ -47,13 +47,13 @@ export default function Navbar(){
         <div className={style.Icons}>
           <div>
             <Link href='/cart' passHref>
-              <a> <Ceker color="var(--mainColor)"/> </a>
+              <a> <Ceker color="rgb(var(--mainColor))"/> </a>
             </Link>
           </div>
 
           <div className={style.UserIcon}>
             <Link href='/user' passHref>
-              <a> <User color="var(--mainColor)"/> </a>
+              <a> <User color="rgb(var(--mainColor))"/> </a>
             </Link>
           </div>
         </div>

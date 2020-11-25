@@ -2,7 +2,7 @@
 /* --------- */
 .container {
   font-family: NavbarFont;
-  color: var(--mainColor);
+  color: rgb(var(--mainColor));
   width: 100vw;
   height: 10vh;
   display: flex;
@@ -76,7 +76,7 @@
   text-decoration: none;
   opacity: 85%;
   /* - underline : https://nickymeuleman.netlify.app/blog/css-animated-wrapping-underline */
-  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), linear-gradient(var(--mainColor), var(--mainColor));
+  background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0)), linear-gradient(rgb(var(--mainColor)), rgb(var(--mainColor)));
   background-size: 100% 2px, 0 2px;
   background-position: 100% 100%, 0% 100%;
   background-repeat: no-repeat;

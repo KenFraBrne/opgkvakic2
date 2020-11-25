@@ -55,7 +55,7 @@ export default function SideMenu(props: Props) {
             style={{ ...initialStyle.SideMenu, ...transitionStyles[state].SideMenu }}>
             <ul className={ style.Navlinks }>{ links }</ul>
             <div className={ style.UserIcon }>
-              <User color="var(--mainColor)"/>
+              <User color="rgb( var(--mainColor) )"/>
             </div>
           </div>
         </div>
