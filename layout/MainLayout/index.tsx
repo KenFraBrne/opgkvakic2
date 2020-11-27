@@ -33,11 +33,13 @@ export default function MainLayout(props: Props){
         <WelcomeScreen />
       </Fade>
 
+      { !loading &&
       <div className={style.container}>
         <div className={style.Navbar}> <Navbar /> </div>
         <div className={style.Body}> { props.children } </div>
         <div className={style.Footer}> Footer </div>
       </div>
+      }
     </div>
   )
 }
