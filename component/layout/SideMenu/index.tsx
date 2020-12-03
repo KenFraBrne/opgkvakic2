@@ -33,7 +33,7 @@ export default function SideMenu(props: Props) {
   }
 
   const finalStyle = {
-    container : { background: 'rgba(0, 0, 0, 0.5)', zIndex: 1, },
+    container : { background: 'rgba(0, 0, 0, 0.5)', zIndex: 20, },
     SideMenu : { left: '0' },
   }
 
