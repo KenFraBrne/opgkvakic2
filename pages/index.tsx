@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Fade from 'react-reveal/Fade'
 import MainLayout from 'layout/MainLayout'
 import style from 'pages/style.module.css'
 
@@ -21,11 +22,13 @@ export default function HomePage() {
             background: 'rgba( var(--mainColor), 0.8 )',
           }}>
           <div>
-            <h1> Dobrodošli </h1>
-            <p> Curabitur tempus mattis quam. Integer purus diam, ultrices consequat posuere. </p>
-            <Link href="/order" passHref>
-              <div><a> Naručite </a></div>
-            </Link>
+            <Fade bottom>
+              <h1> Dobrodošli </h1>
+              <p> Curabitur tempus mattis quam. Integer purus diam, ultrices consequat posuere. </p>
+              <Link href="/order" passHref>
+                <div><a> Naručite </a></div>
+              </Link>
+            </Fade>
           </div>
         </div>
 
@@ -39,9 +42,11 @@ export default function HomePage() {
 
         <div className={ style.foreground } style={{ justifyContent: 'flex-end', }}>
           <div style={{ background: 'rgba( 255, 255, 255, 0.8 )'}}>
-            <h1> Upoznajte nas </h1>
-            <p> Sed aliquet diam sit amet facilisis semper. Cras luctus ligula vitae porta suscipit. </p>
-            <p> Donec sit amet est tempus risus ultricies vulputate. Suspendisse hendrerit. </p>
+            <Fade bottom>
+              <h1> Upoznajte nas </h1>
+              <p> Sed aliquet diam sit amet facilisis semper. Cras luctus ligula vitae porta suscipit. </p>
+              <p> Donec sit amet est tempus risus ultricies vulputate. Suspendisse hendrerit. </p>
+            </Fade>
           </div>
         </div>
 
