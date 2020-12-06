@@ -8,19 +8,21 @@
 }
 
 .Body {
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-family: BodyFont;
+  display: flex;
+  flex-direction: column;
 }
 
 .Footer {
-
 }
 
 @media screen and (max-width: 1100px) {
   .Navbar{ font-size: 1.2em }
-  .Body{ font-size: 1.3em }
+  .Body{ font-size: 1.5em }
 }
 
-@media screen and (max-width: 900px) {
-  .Body{ font-size: 1em }
+@media screen and (max-width: 800px) {
+  .Navbar{ font-size: 1em }
+  .Body{ font-size: 1.3em }
 }
