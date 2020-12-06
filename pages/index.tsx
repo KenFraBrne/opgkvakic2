@@ -22,9 +22,11 @@ export default function HomePage() {
             background: 'rgba( var(--mainColor), 0.8 )',
           }}>
           <div>
-            <Fade bottom>
+            <Fade right>
               <h1> Dobrodošli </h1>
               <p> Curabitur tempus mattis quam. Integer purus diam, ultrices consequat posuere. </p>
+            </Fade>
+            <Fade right duration={2000}>
               <Link href="/order" passHref>
                 <div><a> Naručite </a></div>
               </Link>
@@ -42,7 +44,7 @@ export default function HomePage() {
 
         <div className={ style.foreground } style={{ justifyContent: 'flex-end', }}>
           <div style={{ background: 'rgba( 255, 255, 255, 0.8 )'}}>
-            <Fade bottom>
+            <Fade left>
               <h1> Upoznajte nas </h1>
               <p> Sed aliquet diam sit amet facilisis semper. Cras luctus ligula vitae porta suscipit. </p>
               <p> Donec sit amet est tempus risus ultricies vulputate. Suspendisse hendrerit. </p>
