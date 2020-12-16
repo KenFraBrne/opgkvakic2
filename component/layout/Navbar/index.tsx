@@ -5,6 +5,7 @@ import User from 'component/icons/User'
 import Ceker from 'component/icons/Ceker'
 import Hamburger from 'component/icons/Hamburger'
 import SideMenu from 'component/layout/SideMenu'
+import UnderlinedLink from 'component/element/UnderlinedLink'
 import style from 'component/layout/Navbar/style.module.css'
 
 export default function Navbar(){
@@ -15,9 +16,12 @@ export default function Navbar(){
     { href: '/news', text: 'Novosti',},
   ].map( ( link, i ) => (
     <li key={i}>
-      <Link href={link.href} passHref>
-        <a className={style.underline}> { link.text } </a>
-      </Link>
+      <UnderlinedLink
+        text={link.text}
+        href={link.href}
+        duration={200}
+        color="rgb(var(--mainColor))"
+        bgColor="white"/>
     </li>
   ))
 

@@ -6,7 +6,8 @@ import { DEFAULT_ENCODING } from 'crypto'
 interface Props {
   text: string;
   href: string;
-  rgbColor: string;
+  color: string;
+  bgColor: string;
   duration: number;
 }
 
@@ -16,22 +17,22 @@ type TransitionStyles = { [ key in TransitionKeys ]: React.CSSProperties }
 
 export default function UnderlinedLink(props: Props){ 
 
-  const { text, href, rgbColor, duration } = props
+  const { text, href, duration, color, bgColor, } = props
 
   const defaultStyle: React.CSSProperties = {
-    color: rgbColor,
+    color: color,
     textDecoration: 'none',
-    backgroundImage: `linear-gradient(rgb(${rgbColor}), rgb(${rgbColor}))`,
-    backgroundSize: '0 2px',
-    backgroundPosition: '0 100%',
-    backgroundRepeat: 'no-repeat',
+    backgroundImage: `linear-gradient(${bgColor}, ${bgColor}), linear-gradient(${color}, ${color})`,
+    backgroundSize: '0 2px, 0 2px',
+    backgroundPosition: '0 100%, 0 100%',
+    backgroundRepeat: 'no-repeat, no-repeat',
     transition: `all ${duration}ms ease`,
   }
 
   const transitionStyles: TransitionStyles  = {
-    entering: { backgroundSize: '100% 2px' },
-    entered: { backgroundSize: '100% 2px', backgroundPosition: '100% 100%' },
-    exiting: { backgroundSize: '0 2px', backgroundPosition: '100% 100%' },
+    entering: { backgroundSize: '0 2px, 100% 2px' },
+    entered: { backgroundSize: '0 2px, 100% 2px' },
+    exiting: { backgroundSize: '100% 2px, 100% 2px'},
     exited: { },
   }
 
